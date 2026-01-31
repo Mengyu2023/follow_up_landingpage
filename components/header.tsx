@@ -3,6 +3,9 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
+// Hier die gewünschte URL für "Get Started" eintragen (z. B. externe Anmeldeseite oder #pricing)
+const GET_STARTED_LINK = "https://web-production-d2e00.up.railway.app/"
+
 export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -30,9 +33,11 @@ export function Header() {
           </a>
         </nav>
 
-        <Button size="sm" className="rounded-full px-6">
-          Get Started
-        </Button>
+        <a href={GET_STARTED_LINK} aria-label="Get Started">
+          <Button size="sm" className="rounded-full px-6">
+            Get Started
+          </Button>
+        </a>
       </div>
     </header>
   )
