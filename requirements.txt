@@ -1,0 +1,2 @@
+# 指向 Backend 目录的依赖
+-r Backend/requirements.txt
